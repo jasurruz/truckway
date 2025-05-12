@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckWay Kompaniyasi</title>
+    <link rel="stylesheet" href="yukberish.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="logo.jpg" alt="TruckWay Logo" width="250">
+        </div>
+        <h1>TruckWay Kompaniyasi</h1>
+        <div>
+         <select>
+         <option>O'zbek</option>
+         <option>Русский</option>
+         <option>English</option>   
+        </select>
+        <a href="#" class="auth-link">Kirish</a>
+        <a href="#" class="auth-link">Roz'yhatdan o'tish</a>
+        </div>
+    </header>
+    <nav>
+        <a href="truck.html">Bosh sahifa</a>
+        <a href="yukolish.html">Yuk-olish</a>
+        <a href="yukberish.html">Yuk-berish</a>
+        <a href="filiallar.html">Filiallar</a>
+        <a href="aloqa.html">Aloqa</a>
+        <a href="xarita.html">Xarita</a>
+        
+    </nav>
+
+    <main>
+        <h2>Yuk berish uchun ma'lumotlarni to'ldiring</h2>
+        <form action="#" method="post">
+            <label for="yukNomi">Yuk nomi:</label>
+            <input type="text" id="yukNomi" name="yukNomi" required>
+    
+            <label for="joatuvchiManzil">Jo'natuvchi manzili:</label>
+            <input type="text" id="joatuvchiManzil" name="joatuvchiManzil" required>
+    
+            <label for="qabulManzil">Qabul qiluvchi manzili:</label>
+            <input type="text" id="qabulManzil" name="qabulManzil" required>
+    
+            <label for="telefon">Telefon raqami:</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="+998 __ ___ __ __" required>
+    
+            <label for="yukTuri">Yuk turi:</label>
+            <select id="yukTuri" name="yukTuri" required>
+                <option value="">Tanlang</option>
+                <option value="Oziq-ovqat">Oziq-ovqat</option>
+                <option value="Qurilish materiali">Qurilish materiali</option>
+                <option value="Maishiy texnika">Maishiy texnika</option>
+                <option value="Boshqa">Boshqa</option>
+            </select>
+    
+            <label for="ogirlik">Yuk og'irligi (kg):</label>
+            <input type="number" id="ogirlik" name="ogirlik" min="1" required>
+    
+            <label for="qoshimcha">Qo'shimcha ma'lumot:</label>
+            <textarea id="qoshimcha" name="qoshimcha" rows="4" placeholder="Agar kerak bo'lsa..."></textarea>
+    
+            <button type="submit">Yuborish</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 TruckWay. Barcha huquqlar himoyalangan.</p>
+    </footer>
+    </body>
+    </html>
+    

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtma - TruckWay</title>
+    <link rel="stylesheet" href="buyurtmalar.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg" alt="TruckWay Logo" width="250">
+        </div>
+        
+    </header>
+
+    <nav>
+        <a href="truck.html">Bosh sahifa</a>
+        <a href="yukolish.html">Yuk-olish</a>
+        <a href="yukberish.html">Yuk-berish</a>
+        <a href="filiallar.html">Filiallar</a>
+        <a href="aloqa.html">Aloqa</a>
+        <a href="xarita.html">Xarita</a>
+    </nav>
+
+    <main>
+        <h2>Buyurtma Tafsilotlari</h2>
+        <div id="buyurtma-details">
+      
+        </div>
+
+        <button onclick="submitOrder()">Buyurtmani Tasdiqlash</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TruckWay. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const manzil = urlParams.get('manzil');
+        const masofa = urlParams.get('masofa');
+        const vaqt = urlParams.get('vaqt');
+        const yukTuri = urlParams.get('yukTuri');
+        const narx = urlParams.get('narx');
+
+        
+        const detailsContainer = document.getElementById('buyurtma-details');
+        detailsContainer.innerHTML = `
+            <p><strong>Manzil:</strong> ${manzil}</p>
+            <p><strong>Masofa:</strong> ${masofa}</p>
+            <p><strong>Vaqt:</strong> ${vaqt}</p>
+            <p><strong>Yuk turi:</strong> ${yukTuri}</p>
+            <p><strong>Narx:</strong> ${narx} so'm</p>
+        `;
+
+        
+        function submitOrder() {
+            alert("Buyurtma tasdiqlandi!");
+            
+        }
+    </script>
+</body>
+</html>
